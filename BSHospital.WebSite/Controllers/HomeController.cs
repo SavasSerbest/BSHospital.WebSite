@@ -1,5 +1,4 @@
-﻿using BSHospital.WebSite.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace BSHospital.WebSite.Controllers

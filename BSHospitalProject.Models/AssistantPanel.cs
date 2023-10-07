@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BSHospitalProject.Models
 {
-    public class BaseModel
+    public class AssistantPanel : BaseModel
     {
-        public int Id { get; set; }
-
+       public string AssistantPassword { get; set; }
+    
     }
 }

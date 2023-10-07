@@ -12,13 +12,13 @@ namespace BSHospitalProject.Models
         public int BranchId { get; set; }
         public int DoctorId { get; set; }
         public int HospitalId { get; set; }
-        public int PatientId { get; set; }
+        
         public int DeparmentId { get; set; }
 
         public virtual Branch Branches { get; set; }
         public virtual Doctor Doctors { get; set; }
         public virtual Hospital Hospitals { get; set; }
-        public virtual Patient Patients { get; set; }
+        public virtual ICollection< Patient> Patients { get; set; } = new List< Patient>();
         public virtual ICollection <Picture> Pictures { get; set; } = new List<Picture>();
         public virtual Department Department { get; set; }
 

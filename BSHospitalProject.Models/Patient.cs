@@ -18,11 +18,11 @@ namespace BSHospitalProject.Models
         public bool HaveAppointment { get; set; }=false;
         public double Weight { get; set; }
         public double Height { get; set; }
-        public int AppointmentId { get; set; }
+      
         public int HospitalId { get; set; }
         public int DepartmentId { get; set; }
 
-        public virtual Appointment Appointment { get; set; }
+        public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
         public virtual ICollection<Branch> Branches { get; set; }=new List<Branch>();
         public virtual ICollection<Doctor> Doctors { get; set; }=new List<Doctor>();
         public virtual Hospital Hospital { get; set; }

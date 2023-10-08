@@ -8,22 +8,15 @@ namespace BSHospitalProject.Models
 {
     public class Appointment:BaseModel
     {
-        public DateTime AppointmentDate { get; set; }
-        public int BranchId { get; set; }
-        public int DoctorId { get; set; }
-        public int HospitalId { get; set; }
-        
-        public int DeparmentId { get; set; }
+        public DateTime AppointmentDate { get; set; }= DateTime.Now;
+        public int? DoctorId { get; set; }
+        public int? HospitalId { get; set; }
+        public int? PatientId { get; set; }
+        public int? DepartmentId { get; set; }
 
-        public virtual Branch Branches { get; set; }
-        public virtual Doctor Doctors { get; set; }
-        public virtual Hospital Hospitals { get; set; }
-        public virtual ICollection< Patient> Patients { get; set; } = new List< Patient>();
-        public virtual ICollection <Picture> Pictures { get; set; } = new List<Picture>();
+        public virtual Doctor Doctor { get; set; }
+        public virtual Hospital Hospital { get; set; }
+        public virtual Patient Patient { get; set; }
         public virtual Department Department { get; set; }
-
-
-       
-
     }
 }

@@ -17,7 +17,7 @@ namespace BSHospitalProject.Models
 
         public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
         public virtual ICollection<Branch> Branches { get; set; } = new List<Branch>();
-        public virtual ICollection<Doctor> Doctors { get; set; } = new List<Doctor>();
+        public virtual ICollection<Doctor>? Doctors { get; set; }= new List<Doctor>();
         public virtual ICollection<Patient> Patients { get; set; } = new List<Patient>();
         public virtual ICollection<Picture> Pictures { get; set; } = new List<Picture>();
         public virtual ICollection<Department> Departments { get; set; } = new List<Department>();

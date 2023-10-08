@@ -237,8 +237,7 @@ namespace BSHospital.Data.Migrations
                     DoctorName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DoctorDepartmentName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Fields = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BranchId = table.Column<int>(type: "int", nullable: false),
-                    HospitalId = table.Column<int>(type: "int", nullable: false)
+                    BranchId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -247,12 +246,6 @@ namespace BSHospital.Data.Migrations
                         name: "FK_Doctors_Branches_BranchId",
                         column: x => x.BranchId,
                         principalTable: "Branches",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Doctors_Hospitals_HospitalId",
-                        column: x => x.HospitalId,
-                        principalTable: "Hospitals",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -343,6 +336,30 @@ namespace BSHospital.Data.Migrations
                         name: "FK_DepartmentDoctor_Doctors_DoctorsId",
                         column: x => x.DoctorsId,
                         principalTable: "Doctors",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "DoctorHospital",
+                columns: table => new
+                {
+                    DoctorsId = table.Column<int>(type: "int", nullable: false),
+                    HospitalsId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DoctorHospital", x => new { x.DoctorsId, x.HospitalsId });
+                    table.ForeignKey(
+                        name: "FK_DoctorHospital_Doctors_DoctorsId",
+                        column: x => x.DoctorsId,
+                        principalTable: "Doctors",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_DoctorHospital_Hospitals_HospitalsId",
+                        column: x => x.HospitalsId,
+                        principalTable: "Hospitals",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -491,6 +508,11 @@ namespace BSHospital.Data.Migrations
                 column: "HospitalsId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_DoctorHospital_HospitalsId",
+                table: "DoctorHospital",
+                column: "HospitalsId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_DoctorPatient_PatientsId",
                 table: "DoctorPatient",
                 column: "PatientsId");
@@ -499,11 +521,6 @@ namespace BSHospital.Data.Migrations
                 name: "IX_Doctors_BranchId",
                 table: "Doctors",
                 column: "BranchId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Doctors_HospitalId",
-                table: "Doctors",
-                column: "HospitalId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Patients_DepartmentId",
@@ -564,6 +581,9 @@ namespace BSHospital.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "DepartmentHospital");
+
+            migrationBuilder.DropTable(
+                name: "DoctorHospital");
 
             migrationBuilder.DropTable(
                 name: "DoctorPatient");

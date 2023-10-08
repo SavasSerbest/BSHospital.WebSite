@@ -18,7 +18,6 @@ namespace BSHospitalProject.Models
         public bool HaveAppointment { get; set; }=false;
         public double Weight { get; set; }
         public double Height { get; set; }
-      
         public int HospitalId { get; set; }
         public int DepartmentId { get; set; }
 

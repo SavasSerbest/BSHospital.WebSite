@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace BSHospitalProject.Models
 {
-    public class Doctor:BaseModel
+    public class Hospital : BaseModel
     {
-        public string DocNameSurname { get; set; }
-        public int? HospitalId { get; set; }
+        public string HospitalName { get; set; }
 
         public virtual ICollection<Appointment> Appointments { get; set; }=new List<Appointment>();
-        public virtual Hospital Hospital { get; set; }
+        public virtual ICollection<Doctor> Doctors { get; set; }=new List<Doctor>();
         public virtual ICollection<Patient> Patients { get; set; }=new List<Patient>();
         public virtual ICollection<Department> Departments { get; set; }=new List<Department>();
-
-
     }
 }

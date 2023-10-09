@@ -19,8 +19,6 @@ namespace BSHospitalProject.Models
         public int? DoctorId { get; set; }
         public int? HospitalId { get; set; }
         public int? DepartmentId { get; set; }
-        
-=======
         public bool IsAllergic { get; set; }=false;
         public bool TakeMedicine { get; set; }=false;
         public bool HaveAppointment { get; set; }=false;

@@ -21,8 +21,4 @@
     <ProjectReference Include="..\BSHospital.Data\BSHospital.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
 </Project>

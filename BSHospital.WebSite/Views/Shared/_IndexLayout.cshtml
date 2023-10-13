@@ -1,8 +1,4 @@
-﻿@{
-    Layout = null;
-}
-
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +11,7 @@
     <title>Medino</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon"  href="~/assets/images/logo/favicon.png"  type="image/x-icon">
+    <link rel="shortcut icon" href="~/assets/images/logo/favicon.png" type="image/x-icon">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="~/assets/css/animate-3.7.0.css">
@@ -70,14 +66,14 @@
                             <li><a asp-action="Department" asp-controller="Home">departments</a></li>
 
 
-                            <li ><a asp-controller="Home" asp-action="Doctors">Doktorlar</a></li>
+                            <li><a asp-controller="Home" asp-action="Doctors">Doktorlar</a></li>
 
-                           
-                                    <li><a asp-controller="Home" asp-action="About">about us</a></li>
 
+                            <li><a asp-controller="Home" asp-action="About">about us</a></li>
 
                                     <li><a href="elements.html">elements</a></li>
-                           
+                            
+                      
                             <li class="menu-has-children">
                                 <a href="">blog</a>
                                 <ul>
@@ -92,6 +88,7 @@
             </div>
         </div>
     </header>
+    @RenderBody()
     <!-- Header Area End -->
     <!-- Banner Area Starts -->
     <section class="banner-area">
@@ -458,6 +455,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
     <!-- News Area Starts -->
     <!-- Footer Area Starts -->
@@ -504,10 +502,12 @@
                 </div>
             </div>
         </div>
+        
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-6">
+                        
                         <span>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>

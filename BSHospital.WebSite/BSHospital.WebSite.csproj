@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BSHospital.Data\BSHospital.Data.csproj" />
+    <ProjectReference Include="..\BSHospital.Repository\BSHospital.Repository.csproj" />
   </ItemGroup>
 
 </Project>

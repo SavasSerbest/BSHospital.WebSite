@@ -16,7 +16,7 @@ namespace BSHospital.WebSite.Controllers
             return View();
         }
 
-        public IActionResult Doctors ()
+        public IActionResult Doctor ()
         {
             return View();
         }

@@ -89,6 +89,30 @@
             </div>
         </div>
     </section>
+
+    <section class="patient-area section-padding">
+        <div class="col-lg-5 offset-lg-1 align-self-center">
+            <div class="appointment-form text-center mt-5 mt-lg-0">
+                <h3 class="mb-5">HEMEN RANDEVU AL</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" placeholder="İsminiz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'İsminiz'" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Mail Adresiniz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mail Adresiniz'" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="datepicker" placeholder="Tarih" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tarih'" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" cols="20" rows="7" placeholder="Mesaj" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mesaj'" required></textarea>
+                    </div>
+                    <a href="#" class="template-btn">Randevu almak istiyorum</a>  @* buradaki butondan agent controller'a gidecek ve ayrıca modal penceresi yapılacak *@
+                </form>
+            </div>
+        </div>
+    </section>
+    
     <!-- Banner Area End -->
     <!-- Map Area Starts -->
     <section class="map-area section-padding">
@@ -118,8 +142,8 @@
                             <i class="fa fa-home"></i>
                         </div>
                         <div class="info-text">
-                            <h3>California, United States</h3>
-                            <p>Santa monica bullevard</p>
+                            <h3>İstanbul, Türkiye</h3>
+                            <p>Maslak 1453, Nişantaşı Üniversitesi</p>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -127,8 +151,9 @@
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="info-text">
-                            <h3>00 (440) 9865 562</h3>
-                            <p>Mon to Fri 9am to 6 pm</p>
+                            <h3>0123 456 78 90</h3>
+                            <p>Hastanemiz 7/24 sizin sağlığınızı düşünüyor.</p>
+                            <p>İstediğiniz saatte arayabilirsiniz.</p>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -136,22 +161,22 @@
                             <i class="fa fa-envelope-o"></i>
                         </div>
                         <div class="info-text">
-                            <h3>support@colorlib.com</h3>
-                            <p>Send us your query anytime!</p>
+                            <h3>bshospitalgroup@gmail.com</h3>
+                            <p>Sorularınızı sorun</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <form action="#">
                         <div class="left">
-                            <input type="text" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" required>
-                            <input type="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required>
-                            <input type="text" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" required>
+                            <input type="text" placeholder="İsminizi yazın" onfocus="this.placeholder = ''" onblur="this.placeholder = 'İsminizi yazın'" required>
+                            <input type="email" placeholder="Mail adresinizi yazın" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mail adresinizi yazın'">
+                            <input type="text" placeholder="Yazmak istediğiniz konuyu giriniz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Yazmak istediğiniz konuyu giriniz'" required>
                         </div>
                         <div class="right">
-                            <textarea name="message" cols="20" rows="7" placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" required></textarea>
+                            <textarea name="message" cols="20" rows="7" placeholder="Mesaj girin" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mesaj girin'"></textarea>
                         </div>
-                        <button type="submit" class="template-btn">subscribe now</button>
+                        <button type="submit" class="template-btn">GÖNDER</button>
                     </form>
                 </div>
             </div>

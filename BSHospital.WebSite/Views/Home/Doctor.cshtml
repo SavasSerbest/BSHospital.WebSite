@@ -180,7 +180,29 @@
                 </div>
             </div>
         </div>
-    </section>
+
+        <section class="patient-area section-padding">
+        <div class="col-lg-5 offset-lg-1 align-self-center">
+            <div class="appointment-form text-center mt-5 mt-lg-0">
+                <h3 class="mb-5">HEMEN RANDEVU AL</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" placeholder="İsminiz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'İsminiz'" required>
+                    </div>
+                    <div class="form-group">
+                            <input type="email" placeholder="Mail Adresiniz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mail Adresiniz'" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="datepicker" placeholder="Tarih" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tarih'" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" cols="20" rows="7" placeholder="Mesaj" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mesaj'" required></textarea>
+                    </div>
+                        <a href="#" class="template-btn">Randevu almak istiyorum</a>  @* buradaki butondan agent controller'a gidecek ve ayrıca modal penceresi yapılacak *@
+                </form>
+            </div>
+        </div>
+        </section>
     <!-- Specialist Area Starts -->
     <!-- Hotline Area Starts -->
     <section class="hotline-area text-center section-padding">

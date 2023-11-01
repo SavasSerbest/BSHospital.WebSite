@@ -18,5 +18,6 @@ namespace BSHospitalProject.Models
         public virtual Hospital Hospital { get; set; }
         public virtual Patient Patient { get; set; }
         public virtual Department Department { get; set; }
+        public virtual ICollection<AgentLogin> AgentLogins { get; set; } = new List<AgentLogin>();
     }
 }

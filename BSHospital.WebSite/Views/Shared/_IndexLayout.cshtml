@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="~/assets/css/linearicons.css">
     <link rel="stylesheet" href="~/assets/css/style.css">
 
-     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+     @* <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <title>Amazing Slider</title>
      <style>
         #slider{
-            display: flex;
+            display:none;
         }
         #slider img {
             margin-right:10px;
@@ -38,7 +38,7 @@
     <script src="sliderengine/amazingslider.js"></script>
     <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
     <script src="sliderengine/initslider-1.js"></script>
-    <!-- End of head section HTML codes -->
+    <!-- End of head section HTML codes --> *@
 
 </head>
 <body>
@@ -72,6 +72,7 @@
                     <div id="logo">
                         <a asp-action="Index" asp-controller="Home" id="logo"><img src="~/assets/images/logo/pp_Görsel_2023-10-06_saat_01.00.32_33b12d06-removebg-preview.png" alt="" title="" /></a>
                     </div>
+                    
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li class="menu-active"><a asp-action="Index" asp-controller="Home">Home</a></li>
@@ -90,22 +91,23 @@
                         </ul>
                     </nav><!-- #nav-menu-container -->
                 </div>
+                </div>
             </div>
         </div>
     </header>
     @RenderBody()
     <!-- Header Area End -->
     <!-- Banner Area Starts -->
-   <div id="slider">
+   @* <div id="slider">
        <div class="slide-img">
-            <div class="department-slider owl-carousel">
+           <div class="department-slider owl-carousel">
            <img src="~/assets/images/cardiology.jpg" alt="Resim1" />
            <img src="~/assets/images/childrendoctor.jpg" alt="Resim2" />
            <img src="~/assets/images/eye.jpg" alt="Resim3" />
            <img src="~/assets/images/radiology.jpg" alt="Resim4" />
         </div>
        </div>
-   </div> 
+   </div>  *@
  
     
     <!-- Banner Area End -->
@@ -386,7 +388,7 @@
     <script src="~/assets/js/vendor/superfish.min.js"></script>
     <script src="~/assets/js/main.js"></script>
 
-    <!-- Insert to your webpage where you want to display the slider -->
+    @* <!-- Insert to your webpage where you want to display the slider -->
     <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 0px;">
         <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
             <ul class="amazingslider-slides" style="display:none;">
@@ -411,7 +413,7 @@
             <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive JavaScript Image Slider">Responsive JavaScript Image Slider</a></div>
         </div>
     </div>
-    <!-- End of body section HTML codes -->
+    <!-- End of body section HTML codes --> *@
 
 </body>
 </html>

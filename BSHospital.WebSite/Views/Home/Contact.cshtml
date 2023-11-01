@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Page Title -->
-    <title>About</title>
+    <title>Contact Us</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="~/assets/images/logo/favicon.png" type="image/x-icon">
@@ -61,16 +61,12 @@
                         <ul class="nav-menu">
                             <li class="menu-active"><a asp-action="Index" asp-controller="Home">Home</a></li>
 
-
                             <li><a asp-action="Department" asp-controller="Home">Departments</a></li>
-
 
                             <li><a asp-controller="Home" asp-action="Doctor">Doctors</a></li>
 
-
                             <li><a asp-controller="Home" asp-action="About">about us</a></li>
-                                    
-
+                            
                             <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                         </ul>
                     </nav><!-- #nav-menu-container -->
@@ -80,34 +76,15 @@
     </header>
     <!-- Header Area End -->
     <!-- Banner Area Starts -->
-    <section class="banner-area other-page">
+    <section class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Us</h1>
-                    <a href="index.html">Home</a> <span>|</span> <a href="about.html">About Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Banner Area End -->
-    <!-- Welcome Area Starts -->
-    <section class="welcome-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 align-self-center">
                     <div class="welcome-img">
-                        <img src="~/assets/images/welcomedoctor.jpg" alt="">
+                        <img src="~/assets/images/contact.jpg" alt="">
                     </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="welcome-text mt-5 mt-lg-0">
-                        <h2>BS Hospital'e Hoşgeldiniz</h2>
-                        <p class="pt-3">Sağlığınız bizim önceliğimizdir. Son teknoloji cihazlar ve uzman kadromuzla, size en iyi sağlık hizmetini sunmak için buradayız. Her gün daha iyi bir yaşamı hedeflerken, sizinle birlikte olmak bize büyük bir onur. Sağlığınıza dair ihtiyaçlarınızı karşılamak için buradayız. Sizleri sağlıklı bir geleceğe taşımak için yanınızdayız.
-
-                        <p>Modern tıbbın güvencesi ve sıcak bir gülümsemeyle sizi karşılıyoruz. Siz değerli hastalarımızla birlikte bu yolculuğa çıkmaktan mutluluk duyuyoruz. İyi ki buradasınız. Sağlığınıza kattığınız her an için değerlisiniz.</p>
-                        
-                    </div>
+                    <h1>Contact Us</h1>
+                    <a href="index.html">Home</a> <span>|</span> <a href="contact.html">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -135,11 +112,77 @@
             </div>
         </div>
     </section>
-
-    <!-- Welcome Area End -->
-    <!-- Patient Area Starts -->
-    @* TAMAMEN KALDIRILDI *@
-    <!-- Patient Area Starts -->
+    
+    <!-- Banner Area End -->
+    <!-- Map Area Starts -->
+    <section class="map-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="mapBox" class="mapBox"
+                         data-lat="40.701083"
+                         data-lon="-74.1522848"
+                         data-zoom="13"
+                         data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+                         data-mlat="40.701083"
+                         data-mlon="-74.1522848">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map Area End -->
+    <!-- Contact Form Starts -->
+    <section class="contact-form section-padding3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>İstanbul, Türkiye</h3>
+                            <p>Maslak 1453, Nişantaşı Üniversitesi</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>0123 456 78 90</h3>
+                            <p>Hastanemiz 7/24 sizin sağlığınızı düşünüyor.</p>
+                            <p>İstediğiniz saatte arayabilirsiniz.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>bshospitalgroup@gmail.com</h3>
+                            <p>Sorularınızı sorun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form action="#">
+                        <div class="left">
+                            <input type="text" placeholder="İsminizi yazın" onfocus="this.placeholder = ''" onblur="this.placeholder = 'İsminizi yazın'" required>
+                            <input type="email" placeholder="Mail adresinizi yazın" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mail adresinizi yazın'">
+                            <input type="text" placeholder="Yazmak istediğiniz konuyu giriniz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Yazmak istediğiniz konuyu giriniz'" required>
+                        </div>
+                        <div class="right">
+                            <textarea name="message" cols="20" rows="7" placeholder="Mesaj girin" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mesaj girin'"></textarea>
+                        </div>
+                        <button type="submit" class="template-btn">GÖNDER</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form End -->
     <!-- Footer Area Starts -->
     <footer class="footer-area section-padding">
         <div class="footer-widget">
@@ -194,8 +237,12 @@
     <script src="~/assets/js/vendor/jquery.datetimepicker.full.min.js"></script>
     <script src="~/assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="~/assets/js/vendor/superfish.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I"></script>
+    <script src="~/assets/js/vendor/gmaps.min.js"></script>
     <script src="~/assets/js/main.js"></script>
+
 
 
 </body>
 </html>
+

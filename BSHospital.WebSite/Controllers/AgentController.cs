@@ -29,10 +29,7 @@ namespace BSHospital.WebSite.Controllers
         {
             return Json(new {data= unitOfWork.AgentLogins.GetAll().Select(a=> new {
 
-                a.Name,
-                
-
-            
+                a.Name
             }) });
         }
     }

@@ -13,9 +13,11 @@
 
     <!-- Page Title -->
     <title>Medino</title>
+    
 
     <!-- Favicon -->
     <link rel="shortcut icon"  href="~/assets/images/logo/favicon.png"  type="image/x-icon">
+    
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="~/assets/css/animate-3.7.0.css">
@@ -25,6 +27,7 @@
     <link rel="stylesheet" href="~/assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="~/assets/css/linearicons.css">
     <link rel="stylesheet" href="~/assets/css/style.css">
+
 </head>
 <body>
     <!-- Preloader Starts -->
@@ -38,18 +41,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 d-md-flex">
-                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-mobile"></i></span> call us now! +1 305 708 2563</h6>
-                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-envelope-o"></i></span> medical@example.com</h6>
-                        <h6><span class="mr-2"><i class="fa fa-map-marker"></i></span> Find our Location</h6>
+                        
                     </div>
                     <div class="col-lg-3">
                         <div class="social-links">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,32 +59,22 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between d-flex">
                     <div id="logo">
-                        <a href="index.html"><img src="~/assets/images/logo/logo.png" alt="" title="" /></a>
+                        <a asp-action="Index" asp-controller="Home" id="logo"><img src="~/assets/images/logo/pp_Görsel_2023-10-06_saat_01.00.32_33b12d06-removebg-preview.png" alt="" title="" /></a>
                     </div>
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li class="menu-active"><a asp-action="Index" asp-controller="Home">Home</a></li>
 
 
-                            <li><a asp-action="Department" asp-controller="Home">departments</a></li>
+                            <li><a asp-controller="Home" asp-action="Department">Departments</a></li>
 
 
-                            <li ><a asp-controller="Home" asp-action="Doctors">Doktorlar</a></li>
+                            <li><a asp-controller="Home" asp-action="Doctor">Doctors</a></li>
 
                            
-                                    <li><a asp-controller="Home" asp-action="About">about us</a></li>
-
-
-                                    <li><a href="elements.html">elements</a></li>
-                           
-                            <li class="menu-has-children">
-                                <a href="">blog</a>
-                                <ul>
-                                    <li><a href="blog-home.html">blog home</a></li>
-                                    <li><a href="blog-details.html">blog details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a asp-controller="Home" asp-action="About">about us</a></li>
+                                         
+                            <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                         </ul>
                     </nav><!-- #nav-menu-container -->
                 </div>
@@ -307,10 +296,7 @@
                             <div class="doctor-text text-center">
                                 <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
                                 <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i><a></li>
                                 </ul>
                             </div>
                         </div>
@@ -329,10 +315,7 @@
                             <div class="doctor-text text-center">
                                 <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
                                 <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i><a></li>
                                 </ul>
                             </div>
                         </div>
@@ -351,10 +334,7 @@
                             <div class="doctor-text text-center">
                                 <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
                                 <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i><a></li>
                                 </ul>
                             </div>
                         </div>
@@ -373,10 +353,9 @@
                             <div class="doctor-text text-center">
                                 <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
                                 <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                    
+                                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i><a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -517,10 +496,9 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="social-icons">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -541,3 +519,4 @@
 
 </body>
 </html>
+

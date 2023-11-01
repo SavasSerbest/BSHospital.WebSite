@@ -16,7 +16,7 @@ namespace BSHospital.WebSite.Controllers
             return View();
         }
 
-        public IActionResult Doctors ()
+        public IActionResult Doctor ()
         {
             return View();
         }
@@ -27,6 +27,11 @@ namespace BSHospital.WebSite.Controllers
         }
 
         public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }

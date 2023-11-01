@@ -1,6 +1,7 @@
 ﻿@{
     Layout = null;
 }
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Page Title -->
-    <title>Departments</title>
+    <title>Contact Us</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="~/assets/images/logo/favicon.png" type="image/x-icon">
@@ -39,7 +40,7 @@
                         
                     </div>
                     <div class="col-lg-3">
-                         <div class="social-links">
+                        <div class="social-links">
                             <ul>
                                 <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -60,15 +61,12 @@
                         <ul class="nav-menu">
                             <li class="menu-active"><a asp-action="Index" asp-controller="Home">Home</a></li>
 
-
                             <li><a asp-action="Department" asp-controller="Home">Departments</a></li>
 
+                            <li><a asp-controller="Home" asp-action="Doctor">Doctors</a></li>
 
-                            <li ><a asp-controller="Home" asp-action="Doctor">Doctors</a></li>
-                            
-                               
                             <li><a asp-controller="Home" asp-action="About">about us</a></li>
-                                    
+                            
                             <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                         </ul>
                     </nav><!-- #nav-menu-container -->
@@ -82,130 +80,81 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Departments</h1>
-                    <a href="index.html">Home</a> <span>|</span> <a href="departments.html">Departments</a>
+                    <h1>Contact Us</h1>
+                    <a href="index.html">Home</a> <span>|</span> <a href="contact.html">Contact Us</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Banner Area End -->
-    <!-- Feature Area Starts -->
-    <section class="feature-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding">
-                        <img src="~/assets/images/feature1.png" alt="">
-                        <h3>advance technology</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-md-0">
-                        <img src="~/assets/images/feature2.png" alt="">
-                        <h3>comfortable place</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
-                        <img src="~/assets/images/feature3.png" alt="">
-                        <h3>quality equipment</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
-                        <img src="~/assets/images/feature4.png" alt="">
-                        <h3>friendly staff</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Feature Area End -->
-    <!-- Department Area Starts -->
-    <section class="department-area section-padding4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-top text-center">
-                        <h2>Popular department</h2>
-                        <p>Green above he cattle god saw day multiply under fill in the cattle fowl a all, living, tree word link available in the service for subdue fruit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="department-slider owl-carousel">
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="~/assets/images/department1.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="#"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>cardiac clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="~/assets/images/department2.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>plastic surgery</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="~/assets/images/department3.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>dental clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="~/assets/images/department1.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>cardiac clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Department Area Starts -->
-    <!-- Hotline Area Starts -->
-    <section class="hotline-area text-center section-padding">
+    <!-- Map Area Starts -->
+    <section class="map-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Emergency hotline</h2>
-                    <span>(+01) – 256 567 550</span>
-                    <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
+                    <div id="mapBox" class="mapBox"
+                         data-lat="40.701083"
+                         data-lon="-74.1522848"
+                         data-zoom="13"
+                         data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+                         data-mlat="40.701083"
+                         data-mlon="-74.1522848">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Hotline Area End -->
+    <!-- Map Area End -->
+    <!-- Contact Form Starts -->
+    <section class="contact-form section-padding3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>California, United States</h3>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>00 (440) 9865 562</h3>
+                            <p>Mon to Fri 9am to 6 pm</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>support@colorlib.com</h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form action="#">
+                        <div class="left">
+                            <input type="text" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" required>
+                            <input type="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required>
+                            <input type="text" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" required>
+                        </div>
+                        <div class="right">
+                            <textarea name="message" cols="20" rows="7" placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" required></textarea>
+                        </div>
+                        <button type="submit" class="template-btn">subscribe now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form End -->
     <!-- Footer Area Starts -->
     <footer class="footer-area section-padding">
         <div class="footer-widget">
@@ -281,9 +230,12 @@
     <script src="~/assets/js/vendor/jquery.datetimepicker.full.min.js"></script>
     <script src="~/assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="~/assets/js/vendor/superfish.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I"></script>
+    <script src="~/assets/js/vendor/gmaps.min.js"></script>
     <script src="~/assets/js/main.js"></script>
 
 
 
 </body>
 </html>
+

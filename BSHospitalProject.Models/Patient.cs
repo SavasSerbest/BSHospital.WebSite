@@ -16,13 +16,9 @@ namespace BSHospitalProject.Models
         public bool HaveSurgery { get; set; } = false;
 
         public bool IsAllergic { get; set; } = false;
-        public int? DoctorId { get; set; }
-        public int? HospitalId { get; set; }
-        public int? DepartmentId { get; set; }
+      
         
-        public virtual Doctor Doctor { get; set; }
-        public virtual Hospital Hospital { get; set; }
-        public virtual Department Department { get; set; }
+      
         public virtual ICollection<Appointment> Appointments { get; set; }
 
        

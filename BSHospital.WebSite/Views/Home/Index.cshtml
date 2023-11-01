@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="~/assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="~/assets/css/linearicons.css">
     <link rel="stylesheet" href="~/assets/css/style.css">
-    <style>
+    @* <style>
         #slider{
             display: flex;
         }
@@ -41,7 +41,7 @@
     <script src="sliderengine/amazingslider.js"></script>
     <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
     <script src="sliderengine/initslider-1.js"></script>
-    <!-- End of head section HTML codes -->
+    <!-- End of head section HTML codes --> *@
 
 </head>
 <body>
@@ -50,6 +50,66 @@
         <div class="spinner"></div>
     </div>
     <!-- Preloader End -->
+    
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="department-slider owl-carousel">
+
+
+
+
+                <div class="single-slide">
+                    <div class="slide-img">
+                        <img src="~/assets/images/cardiologynew.jpg" alt="" class="img-fluid">
+                        <div class="hover-state">
+                            <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-department item-padding text-center">
+                        <h3>Kardioloji</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="single-slide">
+                    <div class="slide-img">
+                        <img src="~/assets/images/cardiologynew.jpg" alt="" class="img-fluid">
+                        <div class="hover-state">
+                            <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-department item-padding text-center">
+                        <h3>Kardioloji</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+
+
+                <div class="single-slide">
+                    <div class="slide-img">
+                        <img src="~/assets/images/cardiologynew.jpg" alt="" class="img-fluid">
+                        <div class="hover-state">
+                            <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-department item-padding text-center">
+                        <h3>Kardioloji</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- Header Area Starts -->
     <header class="header-area">
         <div class="header-top">
@@ -58,7 +118,13 @@
                     <div class="col-lg-12 d-md-flex">
                         
                     </div>
+
+                    
+
                     <div class="col-lg-3">
+                        <div id="logo">
+                            <a asp-action="Index" asp-controller="Home" id="logo"><img src="~/assets/images/logo/15075.png" alt="" title="" /></a>
+                        </div>
                         <div class="social-links">
                             <ul>
                                 <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -67,15 +133,9 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="header" id="home">
-            <div class="container">
-                <div class="row align-items-center justify-content-between d-flex">
-                    <div id="logo">
-                        <a asp-action="Index" asp-controller="Home" id="logo"><img src="~/assets/images/logo/pp_Görsel_2023-10-06_saat_01.00.32_33b12d06-removebg-preview.png" alt="" title="" /></a>
-                    </div>
+
+
+
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li class="menu-active"><a asp-action="Index" asp-controller="Home">Home</a></li>
@@ -86,19 +146,30 @@
 
                             <li><a asp-controller="Home" asp-action="Doctor">Doctors</a></li>
 
-                           
+
                             <li><a asp-controller="Home" asp-action="About">about us</a></li>
-                                         
+
                             <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                         </ul>
                     </nav><!-- #nav-menu-container -->
+
+                </div>
+            </div>
+        </div>
+        <div id="header" id="home">
+            <div class="container">
+                <div class="row align-items-center justify-content-between d-flex">
+                    @* <div id="logo">
+                        <a asp-action="Index" asp-controller="Home" id="logo"><img src="~/assets/images/logo/bshospital.png" alt="" title="" /></a>
+                    </div> *@
+                   
                 </div>
             </div>
         </div>
     </header>
     <!-- Header Area End -->
     <!-- Banner Area Starts -->
-         <div id="slider">
+        @*  <div id="slider">
            <div class="slide-img">
             <div class="department-slider owl-carousel">
           <img src="~/assets/images/cardiology.jpg" alt="Resim1" />
@@ -107,7 +178,16 @@
            <img src="~/assets/images/radiology.jpg" alt="Resim4" />
            </div>
        </div>
-   </div>
+   </div> *@
+
+
+    
+    
+
+
+
+
+
     
     <!-- Banner Area End -->
     <!-- Feature Area Starts -->

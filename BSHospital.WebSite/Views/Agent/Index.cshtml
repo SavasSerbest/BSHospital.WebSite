@@ -1,0 +1,83 @@
+﻿@model List<AgentLogin>
+@{
+    Layout = null;
+}
+
+
+
+    <button class="btn btn-success" id="btnAdd"> Randevu Ekle </button>
+     
+<div class="container">
+    <form>
+        @foreach(var agent in Model){
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">@agent.Name</h3>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+        }
+    </form>
+    
+</div>
+
+<!--  Modal trigger button  -->
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+    Launch
+</button>
+
+<!-- Modal Body-->
+<div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Randevu Ekle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    Add rows here
+
+
+                    <div class="mb-3 row">
+                        <label for="inputName" class="col-4 col-form-label">Name</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="txtAgentName" placeholder="Agent Adınızı Giriniz">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputName" class="col-4 col-form-label">Name</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="txtDepartmentName" placeholder="Bölüm Adını Giriniz">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        
+            $("#btnAdd").click(function () {
+                alert('dfsdfsdfsdfds');
+            })
+        
+        </script>
+}
+ 
+

@@ -12,18 +12,13 @@ namespace BSHospitalProject.Models
         public string NameSurname { get; set; }
         public string TCKN { get; set; }
         public int Age { get; set; }
-        public bool IsSick { get; set; } = false;
-        public bool HaveSurgery { get; set; } = false;
-
-        public bool IsAllergic { get; set; } = false;
-        public int? DoctorId { get; set; }
-        public int? HospitalId { get; set; }
-        public int? DepartmentId { get; set; }
+        public int AgentId { get; set; }
         
-        public virtual Doctor Doctor { get; set; }
-        public virtual Hospital Hospital { get; set; }
-        public virtual Department Department { get; set; }
+      
+        
+      
         public virtual ICollection<Appointment> Appointments { get; set; }
+        public virtual AgentLogin AgentLogin { get; set; }
 
        
     }

@@ -36,18 +36,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 d-md-flex">
-                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-mobile"></i></span> call us now! +1 305 708 2563</h6>
-                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-envelope-o"></i></span> medical@example.com</h6>
-                        <h6><span class="mr-2"><i class="fa fa-map-marker"></i></span> Find our Location</h6>
+                        
                     </div>
                     <div class="col-lg-3">
-                        <div class="social-links">
+                         <div class="social-links">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,31 +54,22 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between d-flex">
                     <div id="logo">
-                        <a href="index.html"><img src="~/assets/images/logo/logo.png" alt="" title="" /></a>
+                        <a asp-action="Index" asp-controller="Home" id="logo"><img src="~/assets/images/logo/pp_Görsel_2023-10-06_saat_01.00.32_33b12d06-removebg-preview.png" alt="" title="" /></a>
                     </div>
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li class="menu-active"><a asp-action="Index" asp-controller="Home">Home</a></li>
 
 
-                            <li><a asp-action="Department" asp-controller="Home">departments</a></li>
+                            <li><a asp-action="Department" asp-controller="Home">Departments</a></li>
 
 
-                            <li ><a asp-controller="Home" asp-action="Doctors">Doktorlar</a></li>
+                            <li ><a asp-controller="Home" asp-action="Doctor">Doctors</a></li>
                             
                                
-                                    <li><a asp-controller="Home" asp-action="About">about us</a></li>
-                                    <li><a href="elements.html">elements</a></li>
-                               
-                            
-                            <li class="menu-has-children">
-                                <a href="">blog</a>
-                                <ul>
-                                    <li><a href="blog-home.html">blog home</a></li>
-                                    <li><a href="blog-details.html">blog details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a asp-controller="Home" asp-action="About">about us</a></li>
+                                    
+                            <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                         </ul>
                     </nav><!-- #nav-menu-container -->
                 </div>
@@ -103,40 +90,7 @@
     </section>
     <!-- Banner Area End -->
     <!-- Feature Area Starts -->
-    <section class="feature-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding">
-                        <img src="~/assets/images/feature1.png" alt="">
-                        <h3>advance technology</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-md-0">
-                        <img src="~/assets/images/feature2.png" alt="">
-                        <h3>comfortable place</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
-                        <img src="~/assets/images/feature3.png" alt="">
-                        <h3>quality equipment</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
-                        <img src="~/assets/images/feature4.png" alt="">
-                        <h3>friendly staff</h3>
-                        <p class="pt-3">Creeping for female light years that lesser can't evening heaven isn't bearing tree appear</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @* INDEX VE INDEXLAYOUT KISMINDA *@
     <!-- Feature Area End -->
     <!-- Department Area Starts -->
     <section class="department-area section-padding4">
@@ -144,38 +98,41 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-top text-center">
-                        <h2>Popular department</h2>
-                        <p>Green above he cattle god saw day multiply under fill in the cattle fowl a all, living, tree word link available in the service for subdue fruit.</p>
+                        <h2>Popüler Departmanlar</h2>
+                        <p></p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="department-slider owl-carousel">
+                        
                         <div class="single-slide">
                             <div class="slide-img">
-                                <img src="~/assets/images/department1.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="#"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>cardiac clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="~/assets/images/department2.jpg" alt="" class="img-fluid">
+                                <img src="~/assets/images/cardiologynew.jpg" alt="" class="img-fluid">
                                 <div class="hover-state">
                                     <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
                                 </div>
                             </div>
                             <div class="single-department item-padding text-center">
-                                <h3>plastic surgery</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
+                                <h3>Kardioloji</h3>
+                                <p></p>
                             </div>
                         </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/plasticsurgerynew.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Plastik Cerrahi</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
                         <div class="single-slide">
                             <div class="slide-img">
                                 <img src="~/assets/images/department3.jpg" alt="" class="img-fluid">
@@ -184,20 +141,372 @@
                                 </div>
                             </div>
                             <div class="single-department item-padding text-center">
-                                <h3>dental clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
+                                <h3>Diş Kliniği</h3>
+                                <p></p>
                             </div>
                         </div>
+
                         <div class="single-slide">
                             <div class="slide-img">
-                                <img src="~/assets/images/department1.jpg" alt="" class="img-fluid">
+                                <img src="~/assets/images/eyedoctornew.jpg" alt="" class="img-fluid">
                                 <div class="hover-state">
                                     <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
                                 </div>
                             </div>
                             <div class="single-department item-padding text-center">
-                                <h3>cardiac clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
+                                <h3>Göz Hastalıkları</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/emergencynew.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Acil Servis</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/mouth,chin,dentalcarenew.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Ağız, Çene ve Diş Sağlığı</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/allergynew.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Alerji Hastalıkları</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/anesthesiologynew.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Anesteziyoloji,Anestezi ve Reanimasyon</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/nutritionanddietetics.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Beslenme ve Diyet</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/brainandneurosurgery.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Beyin ve Sinir Cerrahisi</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/checkup.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Check up</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/dermatology.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Cildiye(Dermatoloji)</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/childrendoctor1.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Çocuk Sağlığı ve Hastalıkları</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/endoscope.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Endoskopi</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/rehabilitationphysicaltherapy.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Fizik Tedavi ve Rehabilitasyon</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/generalsurgery.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Genel Cerrahi</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/intensivecare.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Genel Yoğun Bakım</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/chestdiseases.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Göğüs Hastalıkları</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/stethoscope.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>İç Hastalıkları(Dahiliye)</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/implant.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>İmplant</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/obstetrics.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Kadın Doğum(Obstetri)</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/gynecology.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Kadın Hastalıkları(Jinekoloji)</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/kbb.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Kulak,Burun,Boğaz(KBB)</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/kidney.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Nefroloji</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/neurology.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Nöroloji</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/ortodonti.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Ortodonti</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/ortopediandtrauma.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Ortopedi ve Travmatoloji</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/psychology.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Psikoloji</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/radiology1.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Radyoloji</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/labratory.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Tıbbi Laboratuvar</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="~/assets/images/newborn.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+                            <div class="single-department item-padding text-center">
+                                <h3>Yeni Doğan Yoğun Bakım</h3>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -206,14 +515,39 @@
         </div>
     </section>
     <!-- Department Area Starts -->
+
+
+    <section class="patient-area section-padding">
+        <div class="col-lg-5 offset-lg-1 align-self-center">
+            <div class="appointment-form text-center mt-5 mt-lg-0">
+                <h3 class="mb-5">HEMEN RANDEVU AL</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" placeholder="İsminiz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'İsminiz'" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Mail Adresiniz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mail Adresiniz'" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="datepicker" placeholder="Tarih" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tarih'" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" cols="20" rows="7" placeholder="Mesaj" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mesaj'" required></textarea>
+                    </div>
+                    <a href="#" class="template-btn">Randevu almak istiyorum</a>  @* buradaki butondan agent controller'a gidecek ve ayrıca modal penceresi yapılacak *@
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Hotline Area Starts -->
     <section class="hotline-area text-center section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Emergency hotline</h2>
-                    <span>(+01) – 256 567 550</span>
-                    <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
+                    <h2>Acil Durum Çağrı Merkezi</h2>
+                    <span>(0123) 456 78 90</span>
+                    <p class="pt-3">7/24 destek sağlıyoruz. Acil durumlar için lütfen <br>bizimle iletişime geçin.</p>
                 </div>
             </div>
         </div>
@@ -226,60 +560,37 @@
                 <div class="row">
                     <div class="col-xl-2 col-lg-3">
                         <div class="single-widget-home mb-5 mb-lg-0">
-                            <h3 class="mb-4">top products</h3>
-                            <ul>
-                                <li class="mb-2"><a href="#">managed website</a></li>
-                                <li class="mb-2"><a href="#">managed reputation</a></li>
-                                <li class="mb-2"><a href="#">power tools</a></li>
-                                <li><a href="#">marketing service</a></li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6">
                         <div class="single-widget-home mb-5 mb-lg-0">
-                            <h3 class="mb-4">newsletter</h3>
-                            <p class="mb-4">You can trust us. we only send promo offers, not a single.</p>
-                            <form action="#">
-                                <input type="email" placeholder="Your email here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email here'" required>
-                                <button type="submit" class="template-btn">subscribe now</button>
-                            </form>
                         </div>
                     </div>
                     <div class="col-xl-3 offset-xl-1 col-lg-3">
                         <div class="single-widge-home">
-                            <h3 class="mb-4">instagram feed</h3>
-                            <div class="feed">
-                                <img src="~/assets/images/feed1.jpg" alt="feed">
-                                <img src="~/assets/images/feed2.jpg" alt="feed">
-                                <img src="~/assets/images/feed3.jpg" alt="feed">
-                                <img src="~/assets/images/feed4.jpg" alt="feed">
-                                <img src="~/assets/images/feed5.jpg" alt="feed">
-                                <img src="~/assets/images/feed6.jpg" alt="feed">
-                                <img src="~/assets/images/feed7.jpg" alt="feed">
-                                <img src="~/assets/images/feed8.jpg" alt="feed">
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-6">
+
                         <span>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | BS HOSPITAL GROUP <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </span>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="social-icons">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>

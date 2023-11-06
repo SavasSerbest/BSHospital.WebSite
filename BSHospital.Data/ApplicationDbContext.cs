@@ -25,5 +25,6 @@ namespace BSHospital.Data
         public virtual DbSet<Hospital> Hospitals { get; set; }
         public virtual DbSet<Patient> Patients { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<AgentLogin> AgentLogins { get; set; }
     }
 }

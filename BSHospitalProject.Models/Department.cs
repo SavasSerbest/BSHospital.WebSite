@@ -9,5 +9,8 @@ namespace BSHospitalProject.Models
     public class Department : BaseModel
     {
         public string DepartmentName { get; set; }
+        public string? Thumbnail { get; set; }
+
+        public virtual ICollection<AgentLogin> AgentLogins { get; set; }
     }
 }
